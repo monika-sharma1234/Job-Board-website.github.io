@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerJet</title>
+    <style>
+        #header{
+            width: 100%;
+            height:50px;
+            background-color: white;
+            border: 1px solid ghostwhite;
+            background-color:ghostwhite;
+        }
+        .logo{
+            width: 70px;
+            height: 30px;
+            border: 1px solid black;
+            margin: 10px 0px 0px 40px;
+            float: left;
+
+        }
+        #nav{
+            margin: 15px 0px 0px 100px;
+            float:left
+        }
+        .navbar{
+            padding: 0px 0px 0px 50px;
+            text-decoration: none;
+            color: black;
+        }
+        #RightCornerNav{
+            margin: 15px 0px 0px 950px ;
+        }
+        .signIn{
+            text-decoration: none;
+            color: black;
+            padding-left: 50px;
+        }
+        #buttonNav{
+            margin-left: 40px;
+            width: 100px;
+            height: 25px;
+            background-color: green;
+            color: white;
+        }
+        #banner{
+            width: 100%;
+            height: 515px;
+            border: 1px solid black;
+            background-image:url(../pictures/banner2.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+
+        }
+        #findjob{
+            width: 100px; 
+            height:50px;
+            border: 1px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0px 0px 150px;
+            background-color: white;
+        }
+        #jobsearch{
+            width:1000px;
+            height: 110px;
+            border: 1px solid white;
+            margin: 0px 0px 0px 150px;
+            background-color: white;
+        }
+        #jobName{
+            width: 200px;
+            height: 30px;
+            margin: 30px 0px 0px 30px;
+        }
+        #jobTime{
+            width: 200px;
+            height: 36px;
+            margin: 30px 0px 0px 30px;
+        }
+        #CompanyName{
+            width: 200px;
+            height: 30px;
+            margin: 30px 0px 0px 30px;
+        }
+        #Search{
+            width: 200px;
+            height: 40px;
+            margin: 30px 0px 0px 30px;
+            color: white;
+            background-color: green;
+            font-size: 20px;
+        }
+        .jobstype{
+            width: 200px;
+            height: 200px;
+            border: 1px solid darkslategrey;
+            float: left;
+            margin: 100px 0px 0px 80px;
+            text-align: center;
+            background-color:ghostwhite;
+
+        }
+        .jobstype>h4{
+            background-color: darkgray;
+        }
+        /*pictures of jobs----------------*/
+        #architecture{
+            background-image: url(../pictures/architecture.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        #Marketing{
+            background-image: url(../pictures/Digital-Marketing.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:contain;
+        }
+        #Accountancy{
+            background-image: url(../pictures/accountancy12th.webp);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        #HealthCare{
+            background-image: url(../pictures/health-care.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        #Construction{
+            background-image: url(../pictures/construction1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin: 40px 0px 0px 80px;
+        }
+        #fashion{
+            background-image: url(../pictures/Fashion-Designers.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin: 40px 0px 0px 80px;
+        }
+        #SoftwareDevloper{
+            background-image: url(../pictures/software-developer-on-php-code.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin: 40px 0px 0px 80px;
+        }
+        #InformationTechnology{
+            background-image: url(../pictures/IT-1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin: 40px 0px 0px 80px;
+        }
+        #outerDiv{
+            width: 100%;
+            height:350px;
+            border: 1px solid white;
+            margin: 420px 0px 0px 0px;
+        }
+        .innerDiv{
+            width: 500px;
+            height: 250px;
+            border: 1px solid black;
+            float: left;
+            margin: 50px 0px 0px 60px;
+            border-radius: 20px;
+            text-align: center;
+            border-bottom-width: 5px;
+            border-bottom-color: green;
+
+        }
+        .picture{
+            width: 100px;
+            height: 100px;
+            border: 1px solid white;
+            margin: 10px 0px 0px 200px ;
+        }
+        .applypost{
+            color: green;
+            text-decoration: none;
+        }
+        .innerDiv > a:hover{
+            background-color:green;
+            color: white;
+
+        }
+        #picture1{
+            background-image: url(../pictures/search\ image.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:cover;
+        }
+        #picture2{
+            background-image: url(../pictures/recruitment.jfif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:cover;
+        }
+        #HappyClients{
+            width: 500px;
+            height: 50px;
+            border: 1px solid white;
+            border-bottom-width: 5px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0px 0px 360px;
+            border-bottom-color:lightslategray;
+
+        }
+        #clients{
+            width: 100%;
+            height: 300px;
+            border: 1px solid white;
+            margin-top:10px;
+        }
+        .member{
+            width: 580px;
+            height: 260px;
+            border: 1px solid white;
+            float:left;
+            margin: 20px 0px 0px 12px;
+            background-color:ghostwhite;
+
+        }
+        .message{
+            width: 400px;
+            height: 100px;
+            border: 1px solid white;
+            margin: 10px 0px 0px 40px;
+            background-color:rgb(118, 236, 118);
+        }
+        .person{
+            width: 300px;
+            height: 100px;
+            border: 1px solid white;
+            margin: 20px 0px 0px 90px;
+            background-color: white;
+        }
+        .pic{
+            width: 100px;
+            height: 96px;
+            border: 1px solid white;
+            margin: 1px 0px 0px 10px;
+            border-radius: 100px;
+            float: left;
+        }
+        #shivam{
+            background-image: url(../pictures/IMG_20220215_134509_.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color:lightgrey;
+        }
+        #monika{
+            background-image: url(../pictures/Screenshot_2022-10-25-17-10-50-30.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:92px;
+            background-color: lightgrey;
+        }
+
+        #video{
+            width: 100%;
+            height: 500px;
+            border: 1px solid black;
+            margin: 50px 0px 0px 0px;
+
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">LOGO</div>
+        <nav id="nav">
+            <a href="" class="navbar">Home</a>
+            <a href="" class="navbar">Pages</a>
+            <a href="" class="navbar">Listing</a>
+            <a href="" class="navbar">Employer</a>
+            <a href="" class="navbar">Candidate</a>
+        </nav>
+        <div id="RightCornerNav">
+            <a href="" class="signIn">Sign in</a>
+           <!-- <a href="" class="signIn">Post a job</a>-->
+            <input type="button" value="Post a job" id="buttonNav">
+        </div>
+    </header>
+    <div id="banner">
+
+        <h1 style="margin:100px 0px 0px 150px; color:white">Its time to do the best work of your life</h1>
+        <h3 style="margin:20px 0px 0px 150px; color: white;">There is a way to do it better…find it</h3>
+        <div id="findjob">Find A job</div>
+        <div id="jobsearch">
+            <form action="">
+            <input type="text" id="jobName" placeholder="Job Name">
+            <select name="JobTime" id="jobTime">
+                <option  selected disabled>Job Time</option>
+                <option value="Part Time">Part Time</option>
+                <option value="Full Time">Full Time</option>
+                <option value="Freelance">Freelance</option>
+                <option value="Temporary">Temporary</option>
+
+            </select>
+            <input type="text" id="CompanyName" placeholder="Company Name">
+            <input type="submit" id="Search" value="Search">
+        </form>
+        </div>
+        <marquee behavior="slide" direction="left" scrollamount="50">
+        <div class="jobstype" id="architecture"><h4>Architecture</h4></div>
+        <div class="jobstype" id="Marketing"><h4>Marketing</h4></div>
+        <div class="jobstype" id="Accountancy"><h4>Accountancy</h4></div>
+        <div class="jobstype" id="HealthCare"><h4>Health Care</h4></div>
+        <div class="jobstype" id="Construction"><h4>Construction</h4></div>
+        <div class="jobstype" id="fashion"><h4>fashion designer</h4></div>
+        <div class="jobstype" id="SoftwareDevloper"><h4>Software Devloper Engineer</h4></div>
+        <div class="jobstype" id="InformationTechnology"><h4>Information Technology</h4></div></marquee>
+    </div>
+    <div id="outerDiv">
+        <div class="innerDiv" ><div class="picture" id="picture1"></div>
+        <h2>Looking For Job?</h2>
+        <span> Your next role could be with one of these top leading organizations.</span>
+        <br><br> <a href="#" class="applypost">Apply now</a></div>
+        <div class="innerDiv" ><div class="picture" id="picture2"></div>
+        <h2>Are You Recruiting?</h2>
+        <span>Five million searchable CVs in one place with our linked CV database.</span>
+        <br><br> <a href="#" class="applypost">Post a job</a></div>
+    </div>
+    <div id="HappyClients">
+        <h2>What Our Happy Clients say about us</h2>
+    </div>
+    <marquee behavior="slide" direction="left" scrollamount="50">
+    <div id="clients">
+        <div class="member">
+            <div class="message"><span>
+               <div style="color: white; text-align: center;"> <span style="font-weight: bold;">&nbsp;<big>"</big></span>&nbsp Job board  is an excellent job portal.
+                We value the resumes received through this channel.
+                Magic Search and Power search are handy tools.
+                We are delighted with their service.<span style="font-weight: bold;">&nbsp;<big>"</big></span></div>
+            </span></div>
+            <div class="person">
+                <div class="pic" id="monika"></div>
+                <h4 style="margin-left:150px">Monika Sharma</h4>
+                <span style="margin-left:40px">Product Designer</span>
+            </div>
+        </div>
+        <div class="member">
+            <div class="message"><span>
+                <div style="color: white; text-align: center;"> <span style="font-weight: bold;">&nbsp;<big>"</big></span>&nbsp Portal is very user-friendly in terms of searching
+                     for resumes and job posting.
+                      Also, they have an excellent database to search for resumes.
+                       As far as services are involved, it's terrific!
+                    <span style="font-weight: bold;">&nbsp;<big>"</big></span></div>
+                </span>
+            </div>
+            <div class="person">
+                <div class="pic" id="shivam"></div>
+                <h4 style="margin-left:150px">Shivam Parashar</h4>
+                <span style="margin-left:50px">Web Developer</span>
+            </div>
+        </div>
+
+    </div>
+</marquee>
+    <div id="video">
+    <h3 style="text-align:center; background-color:silver;">
+    difficulties of getting "Jobs"&nbsp;&nbsp;( animated video) </h3>
+    </div>
+</body>
+</html>
