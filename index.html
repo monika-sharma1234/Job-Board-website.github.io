@@ -20,7 +20,7 @@
             border: 1px solid white;
             margin: 10px 0px 0px 40px;
             float: left;
-            background-image: url(./pictures/CareerJet_featured.jpg);
+            background-image: url(../pictures/CareerJet_featured.jpg);
             background-position: center;
             background-repeat:no-repeat;
             background-size: cover;
@@ -55,7 +55,7 @@
             width: 100%;
             height: 515px;
             border: 1px solid black;
-            background-image:url(./pictures/banner2.jpg);
+            background-image:url(../pictures/banner2.jpg);
             background-repeat:no-repeat;
             background-position: center;
             background-size:cover;
@@ -117,7 +117,7 @@
         }
         /*pictures of jobs----------------*/
         #architecture{
-            background-image: url(../pictures/architecture.jpg);
+            background-image: url(../pictures/);
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
@@ -135,7 +135,7 @@
             background-size: contain;
         }
         #HealthCare{
-            background-image: url(./pictures/health-care.jpg);
+            background-image: url(../pictures/health-care.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
@@ -172,7 +172,7 @@
             width: 100%;
             height:350px;
             border: 1px solid white;
-            margin: 420px 0px 0px 0px;
+            
         }
         .innerDiv{
             width: 500px;
@@ -279,11 +279,13 @@
         }
 
         #video{
-            width: 100%;
+            width:100%;
             height: 500px;
-            border: 1px solid black;
-            margin: 50px 0px 0px 0px;
-            
+            border: 1px solid white;
+            margin: 50px 0px 0px 0px;   
+        }
+        #footer{
+            width: 100%;
         }
     </style>
 </head>
@@ -323,6 +325,7 @@
             <input type="submit" id="Search" value="Search">
         </form>
         </div>
+        <div style="margin: 60px 0px 0px 0px;">
         <marquee behavior="slide" direction="left" scrollamount="50">
         <div class="jobstype" id="architecture"><h4>Architecture</h4></div>
         <div class="jobstype" id="Marketing"><h4>Marketing</h4></div>
@@ -333,7 +336,8 @@
         <div class="jobstype" id="SoftwareDevloper"><h4>Software Devloper Engineer</h4></div>
         <div class="jobstype" id="InformationTechnology"><h4>Information Technology</h4></div></marquee>
     </div>
-    <div id="outerDiv">
+    </div>
+    <div id="outerDiv" style="margin: 450px 0px 0px ;">
         <div class="innerDiv" ><div class="picture" id="picture1"></div>
         <h2>Looking For Job?</h2>
         <span> Your next role could be with one of these top leading organizations.</span>
@@ -377,10 +381,14 @@
         </div>
         
     </div>
+    <h3 style="text-align: center; color:white; background-color:darkslategrey;font-size:30px; font-family:Georgia, 'Times New Roman', Times, serif">Job life VS Business Life</h3>
     <div id="video">
-    <h3 style="text-align:center; background-color:silver;">
-    difficulties of getting "Jobs"&nbsp;&nbsp;( animated video) </h3>
+    <video src="../pictures/JOB LIFE vs BUSINESS LIFE _ Digital Entrepreneur(720P_HD).mp4" 
+    controls width="100%" height="500px"
+    poster="../pictures/job life.png"
+    > 
+    </video>
     </div>
-    
+    <footer id="footer"></footer>
 </body>
 </html>
