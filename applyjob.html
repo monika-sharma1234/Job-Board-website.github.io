@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply for job</title>
+   
+    <style>
+      #applyImage {
+        width: 90px;
+        height: 90px;
+        border: 1px solid #ffffff;
+        margin: 10px 0px 0px 50px;
+        float: left;
+        background-image: url(../pictures/search\ image.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      #heading {
+        border: 1px solid white;
+        margin: 10px 0px 0px 150px;
+        width: 410px;
+      }
+      .label {
+        color: brown;
+        margin-left: 100px;
+      }
+      .name {
+        width: 300px;
+        height: 30px;
+        border: 2px solid white;
+        border-bottom: 3px solid green;
+        border-radius: 10px;
+        margin: 10px 0px 0px 100px;
+        outline: none;
+
+      }
+      #address1{
+        width: 710px;
+        height: 30px;
+        border: 2px solid white;
+        border-bottom: 3px solid green;
+        border-radius: 10px;
+        margin: 10px 0px 0px 63px;
+        outline: none;
+      }
+      #address2{
+        width: 710px;
+        height: 30px;
+        border: 2px solid white;
+        border-bottom: 3px solid green;
+        border-radius: 10px;
+        margin: 10px 0px 0px 275px;
+        outline: none;
+      }
+      #place1 {
+        width: 300px;
+        height: 30px;
+        border: 2px solid white;
+        border-bottom: 3px solid green;
+        border-radius: 10px;
+        margin: 10px 0px 0px 275px;
+        outline: none;
+      }
+      #place2 {
+        width: 300px;
+        height: 30px;
+        border: 2px solid white;
+        border-bottom: 3px solid green;
+        border-radius: 10px;
+        margin: 10px 0px 0px 100px;
+        outline: none;
+      }
+      #zipCode {
+        width: 300px;
+        height: 30px;
+        border: 2px solid white;
+        border-bottom: 3px solid green;
+        border-radius: 10px;
+        margin: 10px 0px 0px 275px;
+        outline: none;
+      }
+      #country{
+        width: 300px;
+        height: 35px;
+        border: 2px solid white;
+        border-bottom: 3px solid green;
+        border-radius: 10px;
+        margin: 10px 0px 0px 100px;
+        outline: none;
+      }
+      #email{
+        width: 710px;
+        height: 30px;
+        border: 2px solid white;
+        border-bottom: 3px solid green;
+        border-radius: 10px;
+        margin: 10px 0px 0px 70px;
+        outline: none;
+      }
+      #number{
+        width: 300px;
+        height: 30px;
+        border: 2px solid white;
+        border-bottom: 3px solid green;
+        border-radius: 10px;
+        margin: 10px 0px 0px 10px;
+        outline: none;
+      }
+      #AreaCode{
+        width: 100px;
+        height: 30px;
+        border: 2px solid white;
+        border-bottom: 3px solid green;
+        border-radius: 10px;
+        margin: 10px 0px 0px 70px;
+        outline: none;
+      }
+      #applyPosition{
+        width: 710px;
+        height: 35px;
+        border: 2px solid white;
+        border-bottom: 3px solid green;
+        border-radius: 10px;
+        margin: 10px 0px 0px 35px;
+        outline: none;
+      }
+      #uploadResume{
+        width: 300px;
+        height: 20px;
+        border: 2px solid white;
+        border-bottom: 3px solid green;
+        border-radius: 10px;
+        margin: 10px 0px 0px 60px;
+        color: blue;
+        outline: none;
+      }
+      #submit{
+        width:300px;
+        height:35px;
+        color: white;
+        background-color:darkblue;
+        margin-left:450px;
+        border: 2px solid white;
+      }
+      #footer{
+            width: 100%;
+            height: 310px;
+            border: 1px solid white;
+            margin: 30px 0px 0px 0px;
+        
+        }
+        .insidefooter{
+            width: 300px;
+            height: 200px;
+            border: 1px solid white;
+            margin: 50px 0px 0px 70px;
+            float: left;
+            
+        }
+        .QuickLinks{
+            text-decoration: none;
+        }
+        .li{
+            margin: 10px 0px 0px 90px;
+        }
+      
+    </style>
+  </head>
+  <body>
+   
+    <div id="applyImage"></div>
+    <div id="heading">
+      <h2 id="jobHeading">Job Application</h2>
+      <p>Please complete the form below to apply for a position with us.</p>
+    </div>
+    <br /><br /><hr style="background-color: blue;">
+    <form action="./index.html">
+      <label class="label">Full Name:</label>
+      <input type="text" class="name" placeholder="  First Name"  class="input"/>
+      <input type="text" class="name" placeholder="  Last Name" class="input" />
+      <br /><br /><br /><label class="label">Current Address:</label>
+        <input type="text" id="address1" placeholder="  Street Address" class="input">
+        <br><br><input type="text" id="address2" placeholder="  Street Address 2" class="input">
+        <br><br><input type="text" id="place1" placeholder="City"  class="input"/>
+        <input type="text" id="place2" placeholder=" State" class="input" />
+        <br><br><input type="text" id="zipCode" placeholder=" Zip Code"  class="input"/>
+        <select name="country" id="country">
+            <option value="select" hidden>Select country</option>
+            <option value="india">India</option>
+            <option value="america">America</option>
+            <option value="england">England</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="japan">Japan</option>
+            <option value="china">china</option>
+        </select>
+        <br><br><br><label class="label">Email Address:</label>
+        <input type="email" id="email" placeholder="  Email Address" class="input">
+        <br><br><br><label class="label">Phone Number:</label>
+        <input type="number" id="AreaCode" min="10" max="200" placeholder=" Area Code " class="input">
+        <input type="number" id="number" min="10000000" max="99999999999" placeholder="  Phone Number" class="input">
+        <br><br><br><label class="label">Appling for position:</label>
+        <select name="country" id="applyPosition">
+            <option value="india" hidden> Select Position</option>
+            <option value="Architecture">Architecture</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Accountancy">Accountancy</option>
+            <option value="health-care">HealthCare</option>
+            <option value="Construction">Construction</option>
+            <option value="Fashion-Designers">Fashion-Designers</option>
+            <option value="SoftwareDevloper">Software-Devloper</option>
+            <option value=" SoftwareDevloper">Information-Technology</option>
+        </select>
+        <br><br><br><label class="label">Upload Resume:</label>
+        <input type="file" id="uploadResume" class="input">
+        <br><br><br>
+        <input type="submit" id="submit" value="Submit" onclick="submit()" class="input">
+        <script>
+            function submit(){
+              //var a = document.getElementById("applyPosition").value;
+               alert("You succesfully apply for the position ");
+              
+           }
+       </script>
+    <br><br><br><br>
+    
+    </form>
+    
+    <footer id="footer">
+        <div class="insidefooter">
+        <div style="font-size:30px; font-family:Georgia, 'Times New Roman', Times, serif;text-align: center; margin-top: 10px;"><span style="color:orange;">Career</span>Jet</div>
+        <br><br>
+        <address style="font-size: 15px; font-family:'Courier New', Courier, monospace;margin-left:15px ;">Artauni , near moolchandra hospital, Agra , 282007, uttar pradesh ,India
+        </address><br>
+        <address style="margin-left: 15px;"><a href="https://monika-sharma1234.github.io/Job-Board-website.github.io" style="text-decoration: none;"> https://monika-sharma1234.github.io/Job-Board-website.github.io/</a> </address>
+
+        </div>
+        <div class="insidefooter">
+            <div style="text-align: center; color:green; font-size:30px; font-family:Georgia, 'Times New Roman', Times, serif;text-align: center; margin-top: 10px;">Quick Links</div>
+            <ul style="list-style-type: none;" >
+                <li class="li"><a href="#" class="QuickLinks">Top</a></li>
+                <li class="li"><a href="./index.html" class="QuickLinks">Home</a></li>
+                <li class="li"><a href="./pages/Signup.html" class="QuickLinks">Sign up</a></li>
+                <li class="li"><a href="#" class="QuickLinks">Contact Us</a></li>
+                <li class="li"><a href="./pages/Aboutus.html" class="QuickLinks">About Us</a></li>
+            </ul>
+        </div>
+        <div class="insidefooter">
+           <div style="text-align: center; color:slategrey; font-size:30px; font-family:Georgia, 'Times New Roman', Times, serif;text-align: center; margin-top: 10px;">Contact Us</div>
+            <Address  style="font-size: 15px; font-family:'Courier New', Courier, monospace;margin-left:15px ;">
+                <br> Email: shivam.parashar_cs20@gla.ac.in <br>
+                phone: 9719966914 <br><br>
+                Email: Monika.sharma_cs20@gla.ac.in <br>
+                phone: 8755441908 <br>
+            </Address>
+        </div>
+    </footer>
+
+  </body>
+</html>
