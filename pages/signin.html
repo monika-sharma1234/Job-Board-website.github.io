@@ -75,16 +75,23 @@
     <a id="top" style="color:white;">s</a>
     <div id="box">
         <h4>Sign in</h4>
+        <form action="../index.html">
         <div class="form"> 
-            Email Address <input type="text" placeholder="Enter Your Email" class="name"><br><br>
+            Email Address <input type="text" placeholder="Enter Your Email" class="name" required><br><br>
             Password <input type="password" placeholder="Enter Your password" class="name"requried><span style="color: red">*</span><br><br></div>
             <input type="checkbox" class="condition">Remember Me <br><br>
             
-            <a href="../index.html"><button class="submit">Sign in</button></a><br><br><br>
+            <a href="../index.html"><button class="submit" >Sign in</button></a><br><br><br>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span>Don't have an account? 
-                <a href="./Signup.html">create account</a>
+                <a href="../signUp.html" >create account</a>
             </span>
         </div> 
+    </form>
+    <script>
+        function fun(){
+            alert("you successfully log in.");
+        }
+    </script>
         <footer id="footer">
             <div class="insidefooter">
             <div style="font-size:30px; font-family:Georgia, 'Times New Roman', Times, serif;text-align: center; margin-top: 10px;"><span style="color:orange;">Career</span>Jet</div>
