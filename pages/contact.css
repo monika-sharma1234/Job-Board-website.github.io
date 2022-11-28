@@ -157,3 +157,7 @@ input,#textBox{
 .li{
     margin: 10px 0px 0px 90px;
 }
+.sicon:hover{
+    color:red;
+    float:left;
+   }

@@ -345,8 +345,8 @@
         <h3 style="margin:20px 0px 0px 150px; color: white;">There is a way to do it better…find it</h3>
         <div id="findjob">Find A job</div>
         <div id="jobsearch">
-            <form action="./output.html">
-            <input type="text" id="jobName" placeholder="Job Name" required >
+            
+            <input type="text" id="jobName" placeholder="Job Name" class="query" >
             <select name="JobTime" id="jobTime">
                 <option  selected disabled>Job Time</option>
                 <option value="Part Time">Part Time</option>
@@ -358,9 +358,18 @@
             <input type="text" id="CompanyName" placeholder="Company Name" >
             <!-- <button id="Search"> <a  href="./output.html">Search</a></button>
             -->
-            <input type="submit" id="Search" value="Search">
-        </form>
+            <input type="submit" id="Search" value="Search" class="searchBtn">
+        
         </div>
+        <script>
+            let query = document.querySelector('.query');
+            let searchBtn  = document.querySelector('.searchBtn');
+            searchBtn.onclick = function(){
+                let url = 'https://www.google.com/search?q='+query.value;
+                window.open(url,'_self');
+                
+            }
+        </script>
         <div style="margin: 60px 0px 0px 0px;">
         <!--<marquee behavior="slide" direction="left" scrollamount="50">-->
         <a href="./pages/Architecture.html" target="_blank"><div class="jobstype" id="architecture"><h4>Architecture</h4></div></a>
